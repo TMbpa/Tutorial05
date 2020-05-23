@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:paddingTop="20sp"
+        android:paddingBottom="20sp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/sid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:autofillHints=""
+            android:backgroundTint="inputTint"
+            android:hint="sid"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/sName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="inputTint"
+            android:hint="sName"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/sAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="inputTint"
+            android:hint="sAddress"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/sPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="inputTint"
+            android:hint="SPhone"
+            android:inputType="phone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondLayout"
+        android:layout_below="@id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:paddingTop="20sp"
+        android:gravity="center"
+        android:paddingBottom="20sp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Save"
+            android:textAllCaps="true" />
+
+        <Button
+            android:id="@+id/showBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Show"
+            android:textAllCaps="true"
+            android:layout_marginLeft="50sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_below="@id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:paddingTop="20sp"
+        android:gravity="center"
+        android:paddingBottom="20sp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Update"
+            android:textAllCaps="true" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Delete"
+            android:textAllCaps="true"
+            android:layout_marginLeft="50sp" />
+    </LinearLayout>
+
+</RelativeLayout>
